@@ -1,21 +1,16 @@
-"""This module serves as a basis for your project if you use NiceGUI.
+def run():
 
-The project assumes that your "main_ng" entrypoint is the function run() of this file
-(see pyproject.toml scripts)
-"""
+    print("==============================")
+    print("       IMDB EXPLORER")
+    print("==============================")
+    print("a - Profil d'un acteur/actrice")
+    print("b - Top 5 des films")
+    print("q - Quitter")
 
-import numpy as np
-from nicegui import ui
+    choix = input("\nVotre choix : ")
 
-from perm.my_module import typed_function
-
-
-def run(reload: bool = False):
-    """This is the main function that gets run"""
-    ui.label(f"Hello world {typed_function(np.zeros(10), '')}")
-    ui.slider(min=0, max=100)
-    ui.run(reload=reload)
+    print("Vous avez choisi :", choix)
 
 
-if __name__ in {"__main__", "__main_mp"}:
-    run(True)
+if __name__ == "__main__":
+    run()
