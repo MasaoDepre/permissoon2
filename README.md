@@ -1,4 +1,4 @@
-## ee
+## epermis
 
 This project was started with [supopo-pai-cookiecutter-template](https://github.com/ClementPinard/supop-pai-cookiecuttter-template/tree/main)
 
@@ -64,3 +64,4 @@ cd docs && uv run make html
 ```bash
 uv sync --group docs
 cd docs && make livehtml
+hello paul cheneau
